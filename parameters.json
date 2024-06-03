@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "bf8f3cc3-5100-4b0a-a159-00e1beac7fed"
+        },
+        "resourceGroupName": {
+            "value": "azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com"
+        },
+        "name": {
+            "value": "RIPLC"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingPlanName": {
+            "value": "ASP-azureappautoalertsf08f4cmrqueij-bd42"
+        },
+        "serverFarmResourceGroup": {
+            "value": "azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "B1"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "linuxFxVersion": {
+            "value": "JAVA|21-java21"
+        },
+        "repoUrl": {
+            "value": "https://github.com/LucasMD2514/atividadecloud"
+        },
+        "branch": {
+            "value": "main"
+        },
+        "oidcUserIdentityName": {
+            "value": "RIPLC-id-abad"
+        }
+    }
+}
