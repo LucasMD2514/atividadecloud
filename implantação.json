@@ -1,0 +1,308 @@
+{
+  "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Resources/deployments/Microsoft.Template-20240603142002",
+  "name": "Microsoft.Template-20240603142002",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "5801583079897532391",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "bf8f3cc3-5100-4b0a-a159-00e1beac7fed"
+      },
+      "resourceGroupName": {
+        "type": "String",
+        "value": "azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com"
+      },
+      "name": {
+        "type": "String",
+        "value": "RIPLC"
+      },
+      "location": {
+        "type": "String",
+        "value": "East US"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-azureappautoalertsf08f4cmrqueij-bd42"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "ftpsState": {
+        "type": "String",
+        "value": "FtpsOnly"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "B1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "linuxFxVersion": {
+        "type": "String",
+        "value": "JAVA|21-java21"
+      },
+      "repoUrl": {
+        "type": "String",
+        "value": "https://github.com/LucasMD2514/atividadecloud"
+      },
+      "branch": {
+        "type": "String",
+        "value": "main"
+      },
+      "oidcUserIdentityName": {
+        "type": "String",
+        "value": "RIPLC-id-abad"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-06-03T17:20:49.3594379Z",
+    "duration": "PT54.0872905S",
+    "correlationId": "1b16a104-84df-487d-b610-76a1ad3a76db",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "sites/basicPublishingCredentialsPolicies",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "sites/sourcecontrols",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.ManagedIdentity",
+        "resourceTypes": [
+          {
+            "resourceType": "userAssignedIdentities",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "userAssignedIdentities/federatedIdentityCredentials",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Authorization",
+        "resourceTypes": [
+          {
+            "resourceType": "roleAssignments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/microsoft.insights/components/RIPLC",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "RIPLC"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/serverfarms/ASP-azureappautoalertsf08f4cmrqueij-bd42",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-azureappautoalertsf08f4cmrqueij-bd42"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/microsoft.insights/components/RIPLC",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "RIPLC",
+            "apiVersion": "2015-05-01"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "RIPLC"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/Sites/RIPLC",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "RIPLC"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/basicPublishingCredentialsPolicies/scm",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "RIPLC/scm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/Sites/RIPLC",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "RIPLC"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/basicPublishingCredentialsPolicies/ftp",
+        "resourceType": "Microsoft.Web/sites/basicPublishingCredentialsPolicies",
+        "resourceName": "RIPLC/ftp"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/Sites/RIPLC",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "RIPLC"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "RIPLC-id-abad"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "RIPLC-id-abad",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/sourcecontrols/web",
+        "resourceType": "Microsoft.Web/sites/sourcecontrols",
+        "resourceName": "RIPLC/web"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/Sites/RIPLC",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "RIPLC"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+        "resourceName": "RIPLC-id-abad"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "RIPLC-id-abad"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad/federatedIdentityCredentials/56cgqnsvtxk4c",
+        "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials",
+        "resourceName": "RIPLC-id-abad/56cgqnsvtxk4c"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/Sites/RIPLC",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "RIPLC"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "RIPLC-id-abad"
+          },
+          {
+            "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad",
+            "resourceType": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "resourceName": "RIPLC-id-abad",
+            "apiVersion": "2018-11-30"
+          }
+        ],
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.web/sites/RIPLC/providers/Microsoft.Authorization/roleAssignments/caf56385-4704-53cc-a501-9b0715c358b2",
+        "resourceType": "Microsoft.Authorization/roleAssignments",
+        "resourceName": "caf56385-4704-53cc-a501-9b0715c358b2"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/microsoft.insights/components/RIPLC"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RIPLC-id-abad/federatedIdentityCredentials/56cgqnsvtxk4c"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/serverfarms/ASP-azureappautoalertsf08f4cmrqueij-bd42"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/basicPublishingCredentialsPolicies/ftp"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/basicPublishingCredentialsPolicies/scm"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.web/sites/RIPLC/providers/Microsoft.Authorization/roleAssignments/caf56385-4704-53cc-a501-9b0715c358b2"
+      },
+      {
+        "id": "/subscriptions/bf8f3cc3-5100-4b0a-a159-00e1beac7fed/resourceGroups/azureapp-auto-alerts-f08f4c-mrqueijo88_gmail_com/providers/Microsoft.Web/sites/RIPLC/sourcecontrols/web"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "marketplaceItemId": "Microsoft.Template"
+  }
+}
